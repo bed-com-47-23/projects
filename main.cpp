@@ -1,22 +1,11 @@
 #include <iostream>
-#include "rectangle.h"
+#include "person.h"
+#include <string>
 using namespace std;
 int main() {
-rectangle rectangle; 
-float a;
-float b;
-float area = 0.0;
-cout << "enter length: ";
-cin >> a;
-rectangle.SetLength(a);
-
-cout << "enter width: ";
-cin >> b;
-rectangle.SetWidth(b);
- area = rectangle.GetArea();
-cout << "Area is: " << area << endl;
-return 0;
+    person jane = person("jane", 60.0f);
+    person john = person("john",75.0f);
+    float totalweight = jane + john;
+    cout << "totalweight: " << totalweight<< endl;
+    return 0;
 }
-
-
-
