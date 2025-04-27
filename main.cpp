@@ -1,11 +1,13 @@
 #include <iostream>
-#include "person.h"
-#include <string>
+#include "Rectangle.h"
+#include "Triangle.h"
 using namespace std;
 int main() {
-    person jane = person("jane", 60.0f);
-    person john = person("john",75.0f);
-    float totalweight = jane + john;
-    cout << "totalweight: " << totalweight<< endl;
+    Rectangle rect;
+    Triangle trgl;
+    rect.SetValues(4, 5);
+    trgl.SetValues(4, 5);
+    cout << rect.area() << endl;
+    cout << trgl.area() << endl;
     return 0;
 }
